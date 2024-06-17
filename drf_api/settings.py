@@ -10,10 +10,10 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+import re
 from pathlib import Path
 import os
 import dj_database_url
-import re
 
 if os.path.exists('env.py'):
     import env
@@ -39,8 +39,8 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = 'DEV' in os.environ
 
 ALLOWED_HOSTS = [
-    '8000-sofianords-drfapi4-guvpya1jzih.ws.codeinstitute-ide.net',
     os.environ.get('ALLOWED_HOST'),
+    'localhost',
     ]
 
 
