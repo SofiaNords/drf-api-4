@@ -39,7 +39,7 @@ DEBUG = 'DEV' in os.environ
 
 ALLOWED_HOSTS = [
     '8000-sofianords-drfapi4-guvpya1jzih.ws.codeinstitute-ide.net',
-    '.herokuapp.com'
+    'drf-walkthrough-deployment-a58342df9172.herokuapp.com',
     ]
 
 
