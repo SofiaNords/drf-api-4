@@ -56,14 +56,14 @@ INSTALLED_APPS = [
     'cloudinary',
     'rest_framework',
     'django_filters',
-    'rest_framework.authtoken', 
+    'rest_framework.authtoken',
     'dj_rest_auth',
-    'django.contrib.sites', 
-    'allauth', 
-    'allauth.account', 
-    'allauth.socialaccount', 
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
     'dj_rest_auth.registration',
-    'corsheaders',
+
     'profiles',
     'posts',
     'comments',
@@ -154,7 +154,6 @@ else:
      DATABASES = {
          'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
      }
-     print('connected')
 
 
 # Password validation
